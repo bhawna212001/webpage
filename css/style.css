@@ -1,0 +1,256 @@
+.container{
+    display:flex;
+    /* width:100%; */ 
+}
+
+
+.image{
+   width: 120%; 
+}
+.image img{
+    margin-top: 130px;
+    width: 100%;
+   
+}
+h1{
+    font-size: 30px;
+}
+
+.share{
+    margin-left: 600px;
+    margin-top: 30px;
+}
+.content{
+    width:140%;
+}
+.content h1{
+    margin-bottom: 0px;
+}
+.content p{
+    color: blue;
+    margin-bottom: 0px;
+}
+
+.flex{
+    display: flex;
+    gap:15px;
+    color: blue;
+}
+.ratings {
+    margin-top: 15px;
+}
+.icons{
+    margin-top: 15px;
+    color:black; 
+}
+.checked{
+    color: orange;
+}
+.rating{
+    gap:30px;
+    margin-top:15px ;
+}
+
+.sale p{
+    font-weight: normal;
+    margin-top: 0px;
+    color: black;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.sale span{
+    font-weight: bolder;
+}
+section{
+    border-bottom: 1px solid;
+}
+
+.logo img{
+    margin-top: 0px;
+    width:15%
+}
+
+.off p{
+    color:red;
+    font-size: 30px;
+    font-weight: bold;
+}
+.off span{
+    font-weight: bold;
+    font-size: 35px;
+    color: black;
+}
+.off .sign{
+    color:black;
+    font-size: medium;
+}
+
+.price p{
+    margin-bottom: 10px;
+    color: black;
+}
+
+.price span{
+    text-decoration: line-through;
+}
+
+.content .emi {
+    color:black;
+    line-height:0rem;
+}
+
+.content .emi span{
+    font-weight: bold;
+}
+
+.content .emi .bold{
+    color:blue;
+}
+.off{
+    margin-top: -8px;
+}
+
+.offer{
+    display: flex;
+}
+.offer img{
+    margin-top:20px;
+    width: 40%;
+    height:60%;
+}
+.offer h2{
+    color: black;
+    font-size: 22px;
+    margin-top: 30px;
+    font-weight: bolder;
+    margin-inline-start: -25px; 
+}
+
+.cont{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:5px;
+}
+.conts{
+    border:2px solid gainsboro;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 5px;
+    margin-right:8px;
+}
+
+.content .conts h3{
+    font-weight: bold;
+    margin-top: 2px;
+}
+
+.content .conts p{
+    color: black;
+}
+.conts .bold{
+    color:blue;
+}
+.conts .bold .arrow{
+    color: black;
+}
+
+.delivery{
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+  
+    margin-bottom: 10px;
+}
+.delivery img{
+    width: 35%;
+    margin-top: 15px;
+}
+
+.black h4{font-size: 20px;
+font-weight: bold;
+margin-top: 10px;}
+
+.colors img{
+    width:130px;
+    
+}
+.colors{
+    /* display: grid;
+    grid-template-columns: repeat(4,1fr);
+    */display: flex;
+    gap:10px;
+   
+}
+
+
+.colors .variant{
+  border: 2px solid lightgray;
+  width:140px;
+  border-radius: 8px;
+}
+
+.variant-img{
+    border-bottom: 1px solid; 
+}
+.variant-desc{
+    margin-top: 8px;
+}
+.variant-desc span{
+    color: red;
+    font-size: 20px;
+}
+.variant-desc .line span{
+ text-decoration: line-through;
+ font-size: 15px;
+ color: black;
+}
+  
+.size span{
+    font-size: large;
+}
+.size h2{
+    font-size: large;
+    color: black;
+}
+
+.memory span{
+    color: black;
+    border: 1px dotted;
+    border-radius: 4px;
+    height: 30px;
+    padding: 3px;
+    margin-top:0px;   
+}
+.memory{
+    display: flex;
+    gap: 20px;
+    width: 300px; 
+}
+
+.features {
+    display: flex;
+    gap:30px;
+    color: black;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.features .name p{
+    font-weight: bold;
+    color: black;
+}
+.features .feature p{
+    color: black;
+}
+.features .feature h3{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.about h3{
+    font-size: 22px;
+}
+.about li{
+    color: black;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
