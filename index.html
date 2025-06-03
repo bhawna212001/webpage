@@ -7,7 +7,7 @@
    <title>Iphone 16 Page</title>
    <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
@@ -42,209 +42,216 @@
             <div class="logo">
                <img src="images/amazon.jpg">
             </div>
-               <div class="sale">
+            <div class="sale">
                <p><span>300+ bought </span>in past month</p>
-               </div>
+            </div>
          </section>
 
 
-          
+
          <section class="info">
             <div class="off">
-            <p>-5% <i class="fa fa-rupee sign"></i><span>1,22,900</span></p>
+               <p>-5% <i class="fa fa-rupee sign"></i><span>1,22,900</span></p>
             </div>
             <div class="price">
-            <p>M.R.P.:<i class="fa fa-rupee"></i><span>1,29,900</span></p>
+               <p>M.R.P.:<i class="fa fa-rupee"></i><span>1,29,900</span></p>
             </div>
             <div class="emi-sec">
-            <p class="emi">Inclusive of all taxes</p>
-            <p class="emi"><span>EMI</span> starts at ₹5,958. No Cost EMI available</p>
-            <!-- <p class="bold">EMI  options <i class="fa fa-sort-desc" aria-hidden="true"></i></p> -->
-             
-            <button class="drpbtn" id="drpbtn" onclick="emidropbtn()">EMI Options<i class="fa fa-sort-desc" aria-hidden="true"></i></button>
-            </div>
-             <div id="dropdown-emi" hidden >
-               <h3>EMI Options</h3>
-               <div class="tab-body">
+               <p class="emi">Inclusive of all taxes</p>
+               <p class="emi"><span>EMI</span> starts at ₹5,958. No Cost EMI available</p>
 
-                  <div class="tabs">
-                     <button role="tab" aria-selected="true" id="paylater">Amazon Pay Later</button>
-                     <button role="tab" aria-selected="false" id="debitcard">Debit Card EMI</button> 
-                  </div>
-   
-                  <div class="cont" role="tabpanel"  aria-labelledby="paylater" >
-                  <h3>Standard Plans</h3>
-                  <table class="emi-table">
-                     <tr>
-                        <th>EMI Plan</th>
-                        <th>Interest(pa)</th>
-                        <th>Total Cost</th>
-                     </tr>
-                     <tr>
-                        <td> ₹16,650 x 9m </td>
-                        <td> ₹13,949 (24%)</td>
-                        <td> ₹1,49,849</td>
-                     </tr>
-                     <tr>
-                        <td>₹12,851 x 12m</td>
-                        <td>₹18,308(24%)</td>
-                        <td>₹1,54,208</td>
-                     </tr>
-                  </table>
-                  <ul><strong>Things to Note:</strong></ul>
-                     <li>Pay in easy installments without credit/debit cards.Not a no-cost EMI.</li>
-                     <li>Check your Amazon Pay Later Credit limit <span>here</span></li>
-                 </div>
-   
-                 <div class="cont" role="tabpanel"  aria-labelledby="debitcard" hidden>
-                  <div class="greeting">
-                  <h3>Congratulations!</h3>
-                  <p>You are eligible for Debit Card EMI from below Banks</p>
-                  </div>
-   
-                  <div class="toggle">
-                     <div>
-                     <p>View only 'No Cost EMI options</p>
+               <div class="emi-options">
+
+                  <button class="drpbtn" id="drpbtn" onclick="emidropbtn()">EMI Options<i class="fa fa-sort-desc"
+                        aria-hidden="true"></i>
+                  </button>
+                  <div id="dropdown-emi" hidden>
+                     <div class="emi-hide">
+                     <h3>EMI Options</h3>
+                     <button id="cancel" onclick="closedown()"><i class="fa fa-times" aria-hidden="true"></i></button>
                      </div>
-                     <div>
-                        <label class="switch" for="checkbox">
-                        <input type="checkbox" id="checkbox" />
-                        <div class="slider round"></div>
-                        </label>
+                     <div class="tab-body">
+                     
+
+                        <div class="tabs">
+                           <button role="tab" aria-selected="true" id="paylater">Amazon Pay Later</button>
+                           <button role="tab" aria-selected="false" id="debitcard">Debit Card EMI</button>
+                        </div>
+
+                        <div class="cont" role="tabpanel" aria-labelledby="paylater">
+                           <h3>Standard Plans</h3>
+                           <table class="emi-table">
+                              <tr>
+                                 <th>EMI Plan</th>
+                                 <th>Interest(pa)</th>
+                                 <th>Total Cost</th>
+                              </tr>
+                              <tr>
+                                 <td> ₹16,650 x 9m </td>
+                                 <td> ₹13,949 (24%)</td>
+                                 <td> ₹1,49,849</td>
+                              </tr>
+                              <tr>
+                                 <td>₹12,851 x 12m</td>
+                                 <td>₹18,308(24%)</td>
+                                 <td>₹1,54,208</td>
+                              </tr>
+                           </table>
+                           <ul><strong>Things to Note:</strong></ul>
+                           <li>Pay in easy installments without credit/debit cards.Not a no-cost EMI.</li>
+                           <li>Check your Amazon Pay Later Credit limit <span>here</span></li>
+                        </div>
+
+                        <div class="cont" role="tabpanel" aria-labelledby="debitcard" hidden>
+                           <div class="greeting">
+                              <h3>Congratulations!</h3>
+                              <p>You are eligible for Debit Card EMI from below Banks</p>
+                           </div>
+
+                           <div class="toggle">
+                              <div>
+                                 <p>View only 'No Cost EMI options</p>
+                              </div>
+                              <div>
+                                 <label class="switch" for="checkbox">
+                                    <input type="checkbox" id="checkbox" />
+                                    <div class="slider round"></div>
+                                 </label>
+                              </div>
+                           </div>
+
+                           <div class="card">
+                              <div><img src="images/hdfc.jpg">
+                              </div>
+                              <div>
+                                 <h3>HDFC Bank Debit Card</h3>
+                                 <p>Processing Fee of ₹299 by Bank </p>
+                              </div>
+                              <div class="dropdown">
+                                 <button class="dropbtn" id="droptbtn" onclick="dropDown()"><img
+                                       src="images/down-arrow.png">
+                                 </button>
+                                 <div class="dropdown-content" id="myDropdown">
+                                    <h3>Standard Plans</h3>
+                                    <table class="emi-table">
+                                       <tr>
+                                          <th>EMI Plan</th>
+                                          <th>Interest(pa)</th>
+                                          <th>Total Cost</th>
+                                       </tr>
+                                       <tr>
+                                          <td> ₹42,064 x 3m </td>
+                                          <td> ₹3,292(16%)</td>
+                                          <td> ₹1,26,192</td>
+                                       </tr>
+                                       <tr>
+                                          <td>₹21,450 x 6m</td>
+                                          <td>₹5,799(16%)</td>
+                                          <td>₹1,28,699</td>
+                                       </tr>
+                                       <tr>
+                                          <td>₹14,582 x 9m</td>
+                                          <td>₹8,383(16%)</td>
+                                          <td>₹1,31,238</td>
+                                       </tr>
+                                       <tr>
+                                          <td>₹11,151 x 12m</td>
+                                          <td>₹10,910(16%)</td>
+                                          <td>₹1,35,810</td>
+                                       </tr>
+                                       <tr>
+                                          <td>₹6,018 x 24m</td>
+                                          <td>₹21,522(16%)</td>
+                                          <td>₹1,44,422</td>
+                                       </tr>
+                                    </table>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="notes">
+                              <h3>Still confused about Debit Card EMI?</h3>
+                              <a href="#">Learn more</a>
+                              <ul>Things to note:
+                                 <li>About No Cost EMI: interest to be charged by the bank will be given as upfront
+                                    discount on payment page. Click here to check your limit.</li>
+                                 <li>You will be charged a processing fee of ₹199 by HDFC and Kotak bank, ₹99 by ICICI
+                                    bank and 1% of order value for Axis bank. Know more</li>
+                                 <li>Pay in easy installments, no minimum balance required at the time of transaction.
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
                      </div>
                   </div>
-   
-                  <div class="card">
-                     <div><img src="images/hdfc.jpg">
+               </div>
+            </div>   
+
+
+               <div class="offer">
+                  <div>
+                     <img src="images/image.png">
+                  </div>
+                  <div>
+                     <h2>Offers</h2>
+                  </div>
+               </div>
+
+               <div class="slider-cards">
+                  <div class="swiper">
+                     <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                           <h3>Bank Offer</h3>
+                           <p>Upto ₹3,000.00 discount on selected Credit Cards</p>
+                           <span class="bold">4 offers <i class="fa fa-angle-right arrow" aria-hidden="true"></i></span>
+                        </div>
+                        <div class="swiper-slide">
+                           <h3>No Cost EMI</h3>
+                           <p>Upto ₹5,537.39 EMI interest savings on select Credit Cards</p>
+                           <span class="bold">2 offers <i class="fa fa-angle-right arrow" aria-hidden="true"></i></span>
+                        </div>
+                        <div class="swiper-slide">
+                           <h3>Cashback</h3>
+                           <p>Upto ₹2000.00 cashaback at Amazon Pay Balance</p>
+                           <span class="bold">1 offer <i class="fa fa-angle-right arrow" aria-hidden="true"></i></span>
+                        </div>
+                        <div class="swiper-slide">
+                           <h3>Partner Offers</h3>
+                           <p>Get GST invoice invoice and save up to 28% on business purchases</p>
+                           <span class="bold">1 offer <i class="fa fa-angle-right arrow" aria-hidden="true"></i></span>
+                        </div>
                      </div>
-                     <div>
-                     <h3>HDFC Bank Debit Card</h3>
-                     <p>Processing Fee of ₹299 by Bank </p>
-                     </div>
-                     <div class="dropdown">
-                     <button class="dropbtn" id="droptbtn" onclick="dropDown()"><img src="images/down-arrow.png">
-                     </button>
-                     <div class="dropdown-content" id="myDropdown">
-                       <h3>Standard Plans</h3>
-                  <table class="emi-table">
-                     <tr>
-                        <th>EMI Plan</th>
-                        <th>Interest(pa)</th>
-                        <th>Total Cost</th>
-                     </tr>
-                     <tr>
-                        <td> ₹42,064 x 3m </td>
-                        <td> ₹3,292(16%)</td>
-                        <td> ₹1,26,192</td>
-                     </tr>
-                     <tr>
-                        <td>₹21,450 x 6m</td>
-                        <td>₹5,799(16%)</td>
-                        <td>₹1,28,699</td>
-                     </tr>
-                     <tr>
-                        <td>₹14,582 x 9m</td>
-                        <td>₹8,383(16%)</td>
-                        <td>₹1,31,238</td>
-                     </tr>
-                     <tr>
-                        <td>₹11,151 x 12m</td>
-                        <td>₹10,910(16%)</td>
-                        <td>₹1,35,810</td>
-                     </tr>
-                     <tr>
-                        <td>₹6,018 x 24m</td>
-                        <td>₹21,522(16%)</td>
-                        <td>₹1,44,422</td>
-                     </tr>
-                  </table>
-                     </div>
-                     </div> 
+                     <div class="swiper-button-prev"></div>
+                     <div class="swiper-button-next"></div>
                   </div>
-   
-                  <div class="notes">
-                     <h3>Still confused about Debit Card EMI?</h3>
-                     <a href="#">Learn more</a>
-                     <ul>Things to note:
-                        <li>About No Cost EMI: interest to be charged by the bank will be given as upfront discount on payment page. Click here to check your limit.</li>
-                        <li>You will be charged a processing fee of ₹199 by HDFC and Kotak bank, ₹99 by ICICI bank and 1% of order value for Axis bank. Know more</li>
-                        <li>Pay in easy installments, no minimum balance required at the time of transaction.</li>
-                     </ul>
-                  </div>
-                 </div>
                </div>
 
-
-
-
-            </div>
-            
-                
-
-            <div class="offer">
-               <div>
-                  <img src="images/image.png">
-               </div>
-               <div>
-                  <h2>Offers</h2>
-               </div>
-            </div>
-
-            <div class="slider-cards">
-               <div class="swiper">
-                  <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                     <h3>Bank Offer</h3>
-                     <p>Upto ₹3,000.00 discount on selected Credit Cards</p>
-                     <span class="bold">4 offers <i class="fa fa-angle-right arrow" aria-hidden="true"></i></span>
+               <div class="delivery">
+                  <div>
+                     <img src="images/delivery-status.png">
+                     <p>7 days Service <br>Centre Replacement</p>
                   </div>
-                  <div class="swiper-slide">
-                     <h3>No Cost EMI</h3>
-                     <p>Upto ₹5,537.39 EMI interest savings on select Credit Cards</p>
-                     <span class="bold">2 offers <i class="fa fa-angle-right arrow" aria-hidden="true"></i></span>
+                  <div>
+                     <img src="images/truck.png">
+                     <p>Free Delivery</p>
                   </div>
-                  <div class="swiper-slide">
-                     <h3>Cashback</h3>
-                     <p>Upto ₹2000.00 cashaback at Amazon Pay Balance</p>
-                     <span class="bold">1 offer <i class="fa fa-angle-right arrow" aria-hidden="true"></i></span>
+                  <div>
+                     <img src="images/Medal.png">
+                     <p>Warranty Policy</p>
                   </div>
-                  <div class="swiper-slide">
-                     <h3>Partner Offers</h3>
-                     <p>Get GST invoice invoice and save up to 28% on business purchases</p>
-                     <span class="bold">1 offer <i class="fa fa-angle-right arrow" aria-hidden="true"></i></span>
+                  <div>
+                     <img src="images/swap.png">
+                     <p>Pay on Delivery</p>
                   </div>
+                  <div>
+                     <img src="images/debit-card.png">
+                     <p>Secured Transaction</p>
                   </div>
-                  <div class="swiper-button-prev"></div>
-                  <div class="swiper-button-next"></div>
+                  <div>
+                     <img src="images/brand.png">
+                     <p>Top Brand</p>
+                  </div>
                </div>
-            </div>
-
-            <div class="delivery">
-               <div>
-                  <img src="images/delivery-status.png">
-                  <p>7 days Service <br>Centre Replacement</p>
-               </div>
-               <div>
-                  <img src="images/truck.png">
-                  <p>Free Delivery</p>
-               </div>
-               <div>
-                  <img src="images/Medal.png">
-                  <p>Warranty Policy</p>
-               </div>
-               <div>
-                  <img src="images/swap.png">
-                  <p>Pay on Delivery</p>
-               </div>
-               <div>
-                  <img src="images/debit-card.png">
-                  <p>Secured Transaction</p>
-               </div>
-               <div>
-                  <img src="images/brand.png">
-                  <p>Top Brand</p>
-               </div>
-            </div>
          </section>
 
 
@@ -339,25 +346,35 @@
          <section class="about">
             <h3>About this Item</h3>
             <ul>
-            <li>STUNNING TITANIUM DESIGN — iPhone 16 Pro Max has a strong and light titanium design with a larger 17.43 cm (6.9″) Super Retina XDR display. It’s remarkably durable with the latest-generation Ceramic Shield material that’s 2x tougher than any smartphone glass.</li>
-            <li>BUILT FOR APPLE INTELLIGENCE — Apple Intelligence is the personal intelligence system that helps you write, express yourself and get things done effortlessly. With groundbreaking privacy protections, it gives you peace of mind that no one else can access your data — not even Apple.</li>
-            <li>TAKE TOTAL CAMERA CONTROL — Camera Control gives you an easier way to quickly access camera tools, like zoom or depth of field, so you can take the perfect shot in record time.</li>
-            <li>MAGNIFICENT SHOTS— Take your videos to a whole new level with 4K 120 fps Dolby Vision, enabled by the 48MP Fusion camera. The improved 48MP Ultra Wide camera lets you capture mesmerising detail in macro photos and wide-angle shots.</li>
-            <li>PHOTOGRAPHIC STYLES — The latest-generation Photographic Styles give you greater creative flexibility, so you can make every photo even more you. And thanks to advances in the image pipeline, you can now reverse any style, any time.</li>
+               <li>STUNNING TITANIUM DESIGN — iPhone 16 Pro Max has a strong and light titanium design with a larger
+                  17.43 cm (6.9″) Super Retina XDR display. It’s remarkably durable with the latest-generation Ceramic
+                  Shield material that’s 2x tougher than any smartphone glass.</li>
+               <li>BUILT FOR APPLE INTELLIGENCE — Apple Intelligence is the personal intelligence system that helps you
+                  write, express yourself and get things done effortlessly. With groundbreaking privacy protections, it
+                  gives you peace of mind that no one else can access your data — not even Apple.</li>
+               <li>TAKE TOTAL CAMERA CONTROL — Camera Control gives you an easier way to quickly access camera tools,
+                  like zoom or depth of field, so you can take the perfect shot in record time.</li>
+               <li>MAGNIFICENT SHOTS— Take your videos to a whole new level with 4K 120 fps Dolby Vision, enabled by the
+                  48MP Fusion camera. The improved 48MP Ultra Wide camera lets you capture mesmerising detail in macro
+                  photos and wide-angle shots.</li>
+               <li>PHOTOGRAPHIC STYLES — The latest-generation Photographic Styles give you greater creative
+                  flexibility, so you can make every photo even more you. And thanks to advances in the image pipeline,
+                  you can now reverse any style, any time.</li>
             </ul>
             <div class="report-issue">
-              <img src="images/report.jpg" alt="report-icon">
-              <a href="#">Report an issue with this product</a>
-          </div>
+               <img src="images/report.jpg" alt="report-icon">
+               <a href="#">Report an issue with this product</a>
+            </div>
          </section>
 
 
-         
+
 
       </div>
-   </div> 
-   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>  
-<script src="js/script.js"></script>
- 
+   </div>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <script src="js/script.js"></script>
+
 </body>
+
 </html>

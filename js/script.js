@@ -19,33 +19,7 @@ const swiper = new Swiper('.swiper', {
 });
 
 
-// function myFunction() {
-//   document.getElementById("myDropdown").classList.toggle("show");
-// }
-// window.onclick = function(e) {
-//   if (!e.target.matches('.dropbtn')) {
-//   var myDropdown = document.getElementById("myDropdown");
-//     if (myDropdown.classList.contains('show')) {
-//       myDropdown.classList.remove('show');
-//     }
-//   }
-// }
 
-// const dropbutton=document.getElementById("dropbtn");
-// const dropbtncontent=document.getElementById("myDropdown");
- 
-// dropbutton.addEventListener("click", () => {
-//             if (dropbtncontent.style.display === "block") {
-//                 dropbtncontent.style.display = "none";
-//             } else {
-//                 dropbtncontent.style.display = "block";
-//             }
-//         });
-//  document.addEventListener("click", (event) => {
-//             if (!event.target.closest(".dropdown")) {
-//                 dropbtncontent.style.display = "none";
-//             }
-//         });
 
 function dropDown(){
   const content=document.getElementById("myDropdown");
@@ -61,6 +35,17 @@ window.onclick=function(event){
     document.getElementById('myDropdown').style.dispaly="none";
   }
 }
+
+let cancel=document.getElementById("cancel");
+
+cancel.addEventListener('click', ()=> {
+  
+  const modal = document.querySelector("#dropdown-emi")
+
+    modal.style.display ="none";
+  
+});
+
 
 
 function emidropbtn(){
